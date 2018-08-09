@@ -29,6 +29,106 @@
 			<link rel="stylesheet" href="css/owl.carousel.css">			
 			<link rel="stylesheet" href="css/jquery-ui.css">			
 			<link rel="stylesheet" href="css/main.css">
+
+			<style>
+				.getBigger {
+					transition: all .2s ease-in-out;
+				}
+
+				.getBigger:hover {
+					transform: scale(1.1);
+				}
+
+				a {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+
+.btn-draw {
+  position: relative;
+  display: inline-block;
+  color: #324577;
+  border-bottom: 2px solid #324577;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.btn-draw:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 2px;
+  background: #324577;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition-delay: 0.6s;
+}
+.btn-draw > span {
+  position: relative;
+  display: block;
+  padding: 0.2em;
+  color: inherit;
+}
+.btn-draw > span:before, .btn-draw > span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #324577;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+.btn-draw > span:before {
+  height: 2px;
+  width: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  transition-delay: 0.4s;
+}
+.btn-draw > span:after {
+  height: 100%;
+  width: 2px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  transition-delay: 0.2s;
+}
+.btn-draw:hover:after, .btn-draw:hover > span:before, .btn-draw:hover > span:after {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.btn-draw:hover:after {
+  transition-delay: 0s;
+}
+.btn-draw:hover > span:before {
+  transition-delay: 0.2s;
+}
+.btn-draw:hover > span:after {
+  transition-delay: 0.4s;
+}
+.btn-draw:hover {
+  color: #e4e4e2;
+  background-color: #324577;
+  transition-delay: 0.6s;
+}
+
+b {
+	font-weight: 700;
+	color: black !important; 
+}
+
+p {
+	font-size: 17px;
+	color: black !important;
+}
+			</style>
 		</head>
 		<body>	
 		  <header id="header">
@@ -41,7 +141,7 @@
 			        <ul class="nav-menu">
 			          <li><a href="index.html">Home</a></li>
 			          <li><a href="about.html">About</a></li>
-			          <li><a href="services.html">Services</a></li>
+			          <li><a href="publications.html">Publications</a></li>
 			          <li><a href="portfolio.html">Portfolio</a></li>
 			          <li><a href="price.html">Pricing</a></li>
 			          <li class="menu-has-children"><a href="">Blog</a>
@@ -74,14 +174,16 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Services				
+								Publications				
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="services.html"> Services</a></p>
+							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="publications.html"> Publication</a></p>
 						</div>	
 					</div>
 				</div>
 			</section>
 			<!-- End banner Area -->	
+
+			
 
 			<!-- Start services Area -->
 			<section class="services-area section-gap">
@@ -89,66 +191,54 @@
 		            <div class="row d-flex justify-content-center">
 		                <div class="menu-content  col-lg-7">
 		                    <div class="title text-center">
-		                        <h1 class="mb-10">My Offered Services</h1>
-		                        <p>At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.</p>
+		                        <h1 class="mb-5">My Publications</h1>
 		                    </div>
 		                </div>
 		            </div>						
 					<div class="row">
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<span class="lnr lnr-pie-chart"></span>
-								<a href="#"><h4>Web Design</h4></a>
-								<p>
-									“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”
-								</p>
-							</div>
+						<div class="col-12 mb-3 text-justify getBigger" style="box-shadow: 0px 10px 27px 3px rgba(204, 204, 204, 0.2); padding: 30px;">
+							<p><b>Shahid, Nabila; Ilyas, Muhammad; Alowibdi, Jalal; Aljohani, Naif: 'Wordcloud Segmentation for Simplified Exploration of Trending Topics on Twitter', IET Software, 2017,</b> DOI: 10.1049/iet-sen.2016.0307
+								IET Digital Library</p>
+							<div class="text-center mt-3"><a class="btn-draw" href="http://digital-library.theiet.org/content/journals/10.1049/iet-sen.2016.0307"><span>Link</span></a></div>
 						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<span class="lnr lnr-laptop-phone"></span>
-								<a href="#"><h4>Web Development</h4></a>
-								<p>
-									If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.
+						<div class="col-12 mb-3 text-justify getBigger" style="box-shadow: 0px 10px 27px 3px rgba(204, 204, 204, 0.2); padding: 30px;">
+								<p><b>osÈ-RamÛn Cano, Naif R. Aljohani, Rabeeh Ayaz Abbasi, Jalal S. Alowidbi, Salvador GarcÌa, Prototype selection to improve monotonic nearest neighbor, Engineering Applications of Artificial Intelligence, Volume 60, April 2017,</b> Pages 128-135, ISSN 0952-1976</p>
+								<p>Student surveys occupy a central place in the evaluation of courses at teaching institutions. At the end of each course, students are requested to evaluate various aspects such as activities, methodology, coordination or resources used. In addition, a final qualification is given to summarize the quality of the course. The prediction of this final qualification can be accomplished by using monotonic classification techniques. The outcome offered by these surveys is particularly significant for faculty and teaching staff associated with the course.
+									<br>The monotonic nearest neighbor classifier is one of the most relevant algorithms in monotonic classification. However, it does suffer from two drawbacks, (a) inefficient execution time in classification and (b) sensitivity to no monotonic examples. Prototype selection is a data reduction process for classification based on nearest neighbor that can be used to alleviate these problems. This paper proposes a prototype selection algorithm called Monotonic Iterative Prototype Selection (MONIPS) algorithm. Our objective is two-fold. The first one is to introduce MONIPS as a method for obtaining monotonic solutions. MONIPS has proved to be competitive with classical prototype selection solutions adapted to monotonic domain. Besides, to further demonstrate the good performance of MONIPS in the context of a student survey about taught courses.
+									Keywords: Monotonic classification; Prototype selection; Monotone nearest neighbor; Data reduction; Opinion surveys
 								</p>
-							</div>
+								<div class="text-center mt-3"><a class="btn-draw" href="https://doi.org/10.1016/j.engappai.2017.02.006"><span>Link</span></a></div>
 						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<span class="lnr lnr-camera"></span>
-								<a href="#"><h4>Photography</h4></a>
-								<p>
-									Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.
-								</p>
-							</div>	
+						<div class="col-12 mb-3 text-justify getBigger" style="box-shadow: 0px 10px 27px 3px rgba(204, 204, 204, 0.2); padding: 30px;">
+								<p><b>Shanshan Ruan, Rashid Mehmood, Ali Daud, Hussain Dawood, and Jalal S. Alowibdi. 2017</b></p>
+								<p>An Adaptive Method for Clustering by Fast Search-and-Find of Density Peaks: Adaptive-DP. In Proceedings of the 26th International Conference on World Wide Web Companion (WWW '17 Companion). International World Wide Web Conferences Steering Committee, Republic and Canton of Geneva, Switzerland, 119-127.</p>
+								<div class="text-center mt-3"><a class="btn-draw" href="https://doi.org/10.1145/3041021.3054148"><span>Link</span></a></div>
 						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<span class="lnr lnr-picture"></span>
-								<a href="#"><h4>Clipping Path</h4></a>
-								<p>
-									Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument.
-								</p>
-							</div>
+						<div class="col-12 mb-3 text-justify getBigger" style="box-shadow: 0px 10px 27px 3px rgba(204, 204, 204, 0.2); padding: 30px;">
+								<p><b>Ali Daud, Naif Radi Aljohani, Rabeeh Ayaz Abbasi, Miltiadis D. Lytras, Farhat Abbas, and Jalal S. Alowibdi. 2017</b></p>
+								<p>Predicting Student Performance using Advanced Learning Analytics. In Proceedings of the 26th International Conference on World Wide Web Companion (WWW '17 Companion). International World Wide Web Conferences Steering Committee, Republic and Canton of Geneva, Switzerland, 415-421.</p>
+								<div class="text-center mt-3"><a class="btn-draw" href="https://doi.org/10.1145/3041021.3054164"><span>Link</span></a></div>
 						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<span class="lnr lnr-tablet"></span>
-								<a href="#"><h4>Apps Interface</h4></a>
-								<p>
-									Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts.
-								</p>
-							</div>
+						<div class="col-12 mb-3 text-justify getBigger" style="box-shadow: 0px 10px 27px 3px rgba(204, 204, 204, 0.2); padding: 30px;">
+								<p><b>Mehreen Gillani, Muhammad U. Ilyas, Saad Saleh, Jalal S. Alowibdi, Naif Aljohani, and Fahad S. Alotaibi. 2017</b></p>
+								<p>Post Summarization of Microblogs of Sporting Events. In Proceedings of the 26th International Conference on World Wide Web Companion (WWW '17 Companion). International World Wide Web Conferences Steering Committee, Republic and Canton of Geneva, Switzerland, 59-68.</p>
+								<div class="text-center mt-3"><a class="btn-draw" href="https://doi.org/10.1145/3041021.3054146"><span>Link</span></a></div>
 						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<span class="lnr lnr-rocket"></span>
-								<a href="#"><h4>Graphic Design</h4></a>
-								<p>
-									You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that.
-								</p>
-							</div>				
-						</div>														
+						<div class="col-12 mb-3 text-justify getBigger" style="box-shadow: 0px 10px 27px 3px rgba(204, 204, 204, 0.2); padding: 30px;">
+								<p><b>Jarwar, Muhammad Aslam, Rabeeh Ayaz Abbasi, Mubashar Mushtaq, Onaiza Maqbool, Naif R. Aljohani, Ali Daud, Jalal S. Alowibdi, J.R. Cano, S. GarcÌa and Ilyoung Chong. "CommuniMents: A Framework for Detecting Community Based Sentiments for Events," International Journal on Semantic Web and Information Systems (IJSWIS) 13 (2017): 2, accessed (May 14, 2017)</b></p>
+								<div class="text-center mt-3"><a class="btn-draw" href="10.4018/IJSWIS.2017040106"><span>Link</span></a></div>
+						</div>
+						<div class="col-12 mb-3 text-justify getBigger" style="box-shadow: 0px 10px 27px 3px rgba(204, 204, 204, 0.2); padding: 30px;">
+								<p><b>Hikmat Ullah Khan, Ali Daud, Umer Ishfaq, Tehmina Amjad, Naif Aljohani, Rabeeh Ayyaz Abbasi, Jalal S. Alowibdi, Modelling to identify influential bloggers in the blogosphere: A survey, Computers in Human Behavior, Volume 68, March 2017,</b> Pages 64-82, ISSN 0747-5632</p>
+								<p>The user participatory nature of the social web has revolutionized the use of the conventional web. The social web is an integral part of our daily life. Due to the resulting exponential growth of the social web, a number of research domains have emerged, involving research activities that aim to study human nature, to analyse human sentiments and emotions, and to find the impact of various users in the social networks. Recently, the research focus has shifted to identifying a user's influence on other users in a social network. In the recent literature, we find a number of models proposed to find the most influential users in the blogging community. In this paper, we review the models to find these influential bloggers. The existing models are classified into feature-based and network-based categories. The feature-based models consider the salient factors to measure bloggers' influence. The network models, on the other hand, consider the graph-based social network structure of the bloggers to identify those who have the most impact on fellow members. This survey introduces each model with its features, novel aspects, and the datasets used. In addition to the discussion about the model, a comparative analysis of the datasets is presented. We conclude by discussing applications of the relevant literature, exploring open research issues and challenges, and sharing possible future directions in this active area of research.
+									Keywords: Social web; Blog; Model; Influential bloggers; Blogosphere</p>
+								<div class="text-center mt-3"><a class="btn-draw" href="https://doi.org/10.1016/j.chb.2016.11.012."><span>Link</span></a></div>
+						</div>
+						<div class="col-12 mb-3 text-justify getBigger" style="box-shadow: 0px 10px 27px 3px rgba(204, 204, 204, 0.2); padding: 30px;">
+								<p><b>Shahid, Nabila; Ilyas, Muhammad; Alowibdi, Jalal; Aljohani, Naif: 'Wordcloud Segmentation for Simplified Exploration of Trending Topics on Twitter', IET Software, 2017,</b> DOI: 10.1049/iet-sen.2016.0307
+									IET Digital Library</p>
+								<div class="text-center mt-3"><a class="btn-draw" href="http://digital-library.theiet.org/content/journals/10.1049/iet-sen.2016.0307"><span>Link</span></a></div>
+						</div>								
 					</div>
 				</div>	
 			</section>

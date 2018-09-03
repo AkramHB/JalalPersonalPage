@@ -49,11 +49,7 @@ $black			: #222;
 /*  Basic Style 
 /* =================================== */
 
-@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
-* {
-    font-family: 'Droid Arabic Kufi', serif !important;
-    font-size: 18px;
-} 
+
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #8490ff;

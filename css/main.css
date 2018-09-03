@@ -49,6 +49,7 @@ $black			: #222;
 /*  Basic Style 
 /* =================================== */
 
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 
 ::-moz-selection {
   /* Code for Firefox */
